@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <!-- menghubungkan jquery -->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                //fungsi menyembunyikan foto
+                $(".sembunyi").click(function() {$("#foto").hide("slow")});
+                //fungsi menampilkan foto
+                $(".tampil").click(function() {$("#foto").show("slow")});
+            })
+        </script>
+    </head>
+    <body>
+        <!-- membuat button sembunyi -->
+        <button class="sembunyi">sembunyikan</button>
+        <!-- membuat button tampil -->
+        <button class="tampil">tampilkan</button>
+        <!-- menampilkan gambar -->
+        <p><img id="foto" src="logoupnbaru.png"></p>
+    </body>
+</html>
